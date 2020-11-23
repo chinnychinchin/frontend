@@ -1,0 +1,16 @@
+<h1>Item details</h1>
+
+
+<form [formGroup]="itemDetailsForm">
+    <div>
+        <label for="item">Item:</label>
+        <input type="text" formControlName='item'>
+    </div>
+    <div>
+        <label for="item">Quantity:</label>
+        <input type="text" formControlName='quantity'>
+    </div>
+
+    <button type="button" (click)="updateItem()">Update</button>
+
+</form>

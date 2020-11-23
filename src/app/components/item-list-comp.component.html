@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of contents">
+        <tr (click)="seeItemDetails(item.id)" ng-mouseover="mouseover">
+            <td>{{item.item}}</td>
+            <td>{{item.quantity}}</td>
+        </tr>
+        
+    </tbody>
+</table>
